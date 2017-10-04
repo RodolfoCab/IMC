@@ -11,7 +11,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione su peso:" />
+        android:text="Proporcione su peso:"
+        android:id="@+id/campo_peso"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -20,7 +21,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proporcione su estatura:"/>
+        android:text="Proporcione su estatura:"
+        android:id="@+id/campo_estatura"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -34,12 +36,16 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calcular"/>
+            android:text="Calcular"
+            android:onClick="CalculaIMC"
+            android:id="@+id/boton_calcular"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Limpiar"/>
+            android:text="Limpiar"
+            android:onClick="Limpiar"
+            android:id="@+id/boton_limpiar"/>
 
     </LinearLayout>
 
@@ -47,10 +53,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="El Índice de Masa Corporal (IMC) es:" />
+        android:text="El Índice de Masa Corporal (IMC) es:"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.0" />
+        android:text="0.0"
+        android:id="@+id/etiqueta_imc"/>
 </LinearLayout>
